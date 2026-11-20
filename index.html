@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b100c">
+  <meta name="description" content="Rockaway Seasonal Care provides lawn care, fall cleanup, car detailing, snow removal and winter preparation in Morris County, NJ.">
+  <title>Rockaway Seasonal Care | Local Property & Vehicle Care</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <article class="profile-card">
+      <header class="hero">
+        <div class="hero-shade"></div>
+        <div class="hero-top"><span>LOCAL PROPERTY & VEHICLE CARE</span><span>MORRIS COUNTY, NJ</span></div>
+        <img class="logo" src="assets/images/logo.png" alt="Rockaway Seasonal Care logo" onerror="this.style.display='none';document.querySelector('.logo-fallback').hidden=false">
+        <div class="logo-fallback" hidden>ROCKAWAY<br><small>SEASONAL CARE</small></div>
+      </header>
+
+      <section class="intro">
+        <div class="eyebrow"><i></i> LOCAL TEAM · YEAR-ROUND CARE</div>
+        <h1>Rockaway <em>Seasonal Care</em></h1>
+        <p class="bio">Property care and vehicle detailing from a local team. From a clean-cut lawn to a freshly detailed car, we help keep your property looking its best through every season.</p>
+        <p class="location">⌖ Rockaway · Dover · Denville · Morris County, NJ</p>
+        <div class="main-links">
+          <a class="button primary" href="#quote">Get an instant quote <span>↗</span></a>
+          <a class="button secondary" href="https://www.instagram.com/rockawayshine/" target="_blank" rel="noreferrer">◎ Follow on Instagram</a>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="eyebrow">WHAT WE DO</div>
+        <div class="service-list">
+          <a class="service" href="#quote" data-service="Fall Cleanup"><span class="service-icon">✳</span><span class="service-copy"><b>Fall Cleanup</b><small>Leaves, branches, garden beds and seasonal debris.</small></span><strong>From $65</strong><span>↗</span></a>
+          <a class="service" href="#quote" data-service="Lawn Care"><span class="service-icon">♧</span><span class="service-copy"><b>Lawn Care</b><small>Mowing, edging, trimming and lawn touch-ups.</small></span><strong>From $25</strong><span>↗</span></a>
+          <a class="service" href="#quote" data-service="Car Detailing"><span class="service-icon">▱</span><span class="service-copy"><b>Car Detailing</b><small>Interior and exterior vehicle cleaning.</small></span><strong>From $60</strong><span>↗</span></a>
+          <a class="service" href="#quote" data-service="Snow Removal"><span class="service-icon">❄</span><span class="service-copy"><b>Snow Removal</b><small>Driveways, walkways and winter clearing.</small></span><strong>From $25</strong><span>↗</span></a>
+          <a class="service" href="#quote" data-service="Winter Prep"><span class="service-icon">♢</span><span class="service-copy"><b>Winter Prep</b><small>Outdoor preparation and seasonal cleanup.</small></span><strong>From $30</strong><span>↗</span></a>
+        </div>
+        <p class="fine">Starting prices. Final estimates depend on size, condition and project scope.</p>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading"><div><div class="eyebrow">OUR WORK</div><h2>Before <em>& after.</em></h2></div><span class="caption">REAL RESULTS</span></div>
+        <div class="gallery">
+          <article class="work-card"><h3>Fall cleanup</h3><div class="pair"><div class="photo"><img src="assets/images/fall-before.jpg" alt="Fall cleanup before" onerror="this.remove()"><span>BEFORE</span></div><div class="photo"><img src="assets/images/fall-after.jpg" alt="Fall cleanup after" onerror="this.remove()"><span>AFTER</span></div></div></article>
+          <article class="work-card"><h3>Lawn care</h3><div class="pair"><div class="photo"><img src="assets/images/lawn-before.jpg" alt="Lawn care before" onerror="this.remove()"><span>BEFORE</span></div><div class="photo"><img src="assets/images/lawn-after.jpg" alt="Lawn care after" onerror="this.remove()"><span>AFTER</span></div></div></article>
+          <article class="work-card"><h3>Car detailing</h3><div class="pair"><div class="photo"><img src="assets/images/car-before.jpg" alt="Car detailing before" onerror="this.remove()"><span>BEFORE</span></div><div class="photo"><img src="assets/images/car-after.jpg" alt="Car detailing after" onerror="this.remove()"><span>AFTER</span></div></div></article>
+        </div>
+        <p class="fine">Replace the sample image filenames in <code>assets/images/</code> with your own project photos.</p>
+      </section>
+
+      <section class="section quote-section" id="quote">
+        <div class="section-heading"><div><div class="eyebrow">QUICK & EASY</div><h2>Build your <em>quote.</em></h2></div><span class="calculator">▦</span></div>
+        <form id="quote-form">
+          <label for="category">Choose a service</label>
+          <select id="category" name="service_category"></select>
+          <label for="option">Select an option</label>
+          <select id="option" name="service_option"></select>
+          <div class="label">Add extras</div>
+          <div id="addons" class="addons"></div>
+          <div class="quantity-row"><span>Quantity / visits</span><div><button type="button" id="minus" aria-label="Decrease quantity">−</button><output id="quantity">1</output><button type="button" id="plus" aria-label="Increase quantity">+</button></div></div>
+          <div class="total-row"><span>Estimated total</span><strong id="total">$125.00</strong></div>
+          <p class="fine">This is a preliminary estimate, not a final quote. No payment required.</p>
+          <div class="divider"></div>
+          <div class="eyebrow">SEND YOUR REQUEST</div>
+          <div class="form-grid">
+            <div><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Your name"></div>
+            <div><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="you@example.com"></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Phone number"></div>
+            <div><label for="town">Town / address</label><input id="town" name="service_address_or_town" autocomplete="street-address" maxlength="160" placeholder="Town or address"></div>
+          </div>
+          <label for="details">Project details</label>
+          <textarea id="details" name="project_details" rows="3" maxlength="1000" placeholder="Tell us a little more about what you need..."></textarea>
+          <input type="hidden" name="quantity" id="quantity-input" value="1">
+          <input type="hidden" name="add_ons" id="addons-input">
+          <input type="hidden" name="estimated_total" id="total-input">
+          <input type="hidden" name="_replyto" id="replyto">
+          <input type="hidden" name="_subject" value="New Quote Request - Rockaway Seasonal Care">
+          <p class="feedback" id="feedback" aria-live="polite"></p>
+          <button class="button primary submit" type="submit" id="submit">Send quote request <span>↗</span></button>
+        </form>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="section-heading"><div><div class="eyebrow">YOUR WORDS MATTER</div><h2>Built on <em>good work.</em></h2></div><span class="star">★</span></div>
+        <div class="reviews">
+          <article class="review"><div class="stars">★★★★★</div><p>“Very nice work !! And I really liked your lawn mowing technique especially with those stripes! Keep on!”</p><b>Sebastiano</b></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“The crew did a great job pulling weeds and cleaning everything up. They arrived on time and were easy to deal with. I will be using them for future projects. Highly recommend.”</p><b>Chris</b></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“So I needed yard clearing and mowing and these guys did a great job! Easy to book and excellent communication. They were very prompt and followed my instructions carefully as I have an overgrown cut flower garden.”</p><b>Giselle Knaub</b></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“A truly hard-working and highly professional team which is not easy to find these days.”</p><b>Frank</b></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“Amazing job on my car. It looks like I bought it brand new yesterday. I would highly recommend.”</p><b>Timothy Westland</b></article>
+        </div>
+        <a class="feedback-link" href="mailto:Rockawayshine@yahoo.com?subject=Rockaway%20Seasonal%20Care%20Review">Have we worked with you? Share your feedback ↗</a>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-links"><a href="mailto:Rockawayshine@yahoo.com">✉ Email</a><a href="https://www.instagram.com/rockawayshine/" target="_blank" rel="noreferrer">◎ Instagram</a></div>
+        <b>Rockaway Seasonal Care · Morris County, NJ</b><small>Local care for every season.</small>
+      </footer>
+    </article>
+    <div class="bottom">ROCKAWAY SEASONAL CARE <span>·</span> LOCAL BY NATURE</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
